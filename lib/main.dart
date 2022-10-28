@@ -17,7 +17,13 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          child: ListView(),
+          child: ListView(
+            children: [
+              Text("item 1"),
+              Text("item 2"),
+              Text("item 3"),
+            ],
+          ),
         ),
       ),
     );
