@@ -12,17 +12,20 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  List<Widget> data = [
+    ListTile(
+      title: Text('ITEM'),
+      subtitle: Text('SUB-TITLE'),
+      leading: Icon(Icons.person),
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: Container(
           child: ListView(
-            children: [
-              Text("item 1"),
-              Text("item 2"),
-              Text("item 3"),
-            ],
+            children: data,
           ),
         ),
       ),
